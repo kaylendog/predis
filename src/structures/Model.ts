@@ -8,15 +8,11 @@ export interface ModelOptions {
  * Represents a data structure in the database.
  */
 export class Model<T> {
-	public client: RedisClient;
-	public options: ModelOptions;
-	public schema: T;
+	// public client: RedisClient;
+	// public options: ModelOptions;
+	// public schema: T;
 
-	constructor(client: RedisClient, schema: T, opts: ModelOptions) {
-		this.client = client;
-		this.options = opts;
-		this.schema = schema;
-	}
+	constructor(client: RedisClient, schema: T, opts: ModelOptions) {}
 
 	async save() {}
 }

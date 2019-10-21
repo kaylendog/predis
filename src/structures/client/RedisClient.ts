@@ -18,7 +18,7 @@ export class RedisClient extends EventEmitter {
 	/**
 	 * Create a model.
 	 */
-	model<T>(name: string, schema: T, opts: ModelOptions) {
+	model<T extends any = any>(name: string, schema: T, opts: ModelOptions) {
 		opts = Object.assign({ name }, opts);
 		new Model(this, schema, opts);
 	}
