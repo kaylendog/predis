@@ -5,9 +5,10 @@
 	"author": "sparklfox <actuallyori@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"lint": "eslint src/**/*.ts",
 		"test": "yarn lint && yarn mocha",
-		"mocha": "mocha ./tests/**/*.test.ts --require ts-node/register"
+		"mocha": "mocha ./tests/**/*.test.ts --require ts-node/register",
+		"lint": "eslint src/**/*.ts",
+		"build": "tsc --project ./"
 	},
 	"devDependencies": {
 		"@types/chai": "^4.2.3",
